@@ -10,12 +10,9 @@ const User = ({ user, loading, getUser, getUserRepos, repos, match }) => {
     useEffect(() => {
         getUser(match.params.login)
         getUserRepos(match.params.login)
-    })
 
-    // componentDidMount() {
-    //     this.props.getUser(match.params.login)
-    //     this.props.getUserRepos(match.params.login)
-    // }
+        //eslint-disable-next-line
+    }, [])
 
     // destructuring props
     const{
